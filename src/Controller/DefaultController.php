@@ -15,6 +15,6 @@ class DefaultController extends AbstractController
     {
         return $this->render('/index.html.twig', [
             'welcome' => 'Bienvenue',
-         ]);
+        ]);
     }
 }
