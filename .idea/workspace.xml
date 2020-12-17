@@ -2,10 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c5941b2-50af-4896-8929-fd27c6abf52a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Controller/CategoryController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/CategoryType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/ProgramType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/category/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/category/new.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/program/new.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/ProgramController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ProgramController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/program/_navbar.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/_navbar.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/program/season.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/program/season_show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/_navbar.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/_navbar.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/program/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/program/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +191,8 @@
       <workItem from="1607431287189" duration="4257000" />
       <workItem from="1607501842511" duration="34000" />
       <workItem from="1607938125617" duration="4121000" />
-      <workItem from="1607985653275" duration="1688000" />
+      <workItem from="1607985653275" duration="2090000" />
+      <workItem from="1608198963181" duration="2775000" />
     </task>
     <task id="LOCAL-00001" summary="ajustement des espaces">
       <created>1607333885719</created>
@@ -214,7 +222,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607941781323</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="quete symfony 10">
+      <created>1607987477479</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1607987477479</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -237,7 +252,9 @@
     <MESSAGE value="quete 08 symfony" />
     <MESSAGE value="modif quete 8 symfony" />
     <MESSAGE value="Quete 9 symfony" />
-    <option name="LAST_COMMIT_MESSAGE" value="Quete 9 symfony" />
+    <MESSAGE value="quete symfony 10" />
+    <MESSAGE value="quete 11 symgony" />
+    <option name="LAST_COMMIT_MESSAGE" value="quete 11 symgony" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
