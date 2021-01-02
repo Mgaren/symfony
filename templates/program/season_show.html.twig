@@ -1,15 +1,20 @@
 {% extends 'base.html.twig' %}
+
+{% block title %}Season {{ season.number}} - {{ program.title }}{% endblock %}
+
 {% block body %}
-    {% include '_navbar.html.twig' %}
-    <h3>Liste des épisodes de la série {{ program.title }} :</h3>
-    <h4>Saison {{ season.number }} : </h4>
-    {% for episode in season.episodes %}
-        <li>
-            <ul>
-                <h4>{{ episode.number }} | <a href="{{ path('program_episode_show',
-                        { programId: program.id, seasonId: season.id, episodeId: episode.id}) }}">{{ episode.title }}</a></h4>
-            </ul>
-        </li>
-    {% endfor %}
-    <a href="{{ path('program_index', { programId: program.id }) }}">Retour</a>
+    <h2>Season {{ season.number }} de {{ program.title }}</h2>
+        <p>{{ season.description }}</p>
+        <p>Diffusion : {{ season.year }}</p>
+        <p>>List of episodes :</p>
+    <ul>
+        {% for episode in season.episodes %}
+            <li>
+                <a href="{{ path("program_episode_show", { programSlug: program.slug, seasonId: season.id, episodeSlug: episode.slug }) }}">Episode {{ episode.number }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+    
+    <a href="{{ path('program_show', { slug: program.slug }) }}">Return</a>
+
 {% endblock %}

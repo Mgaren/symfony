@@ -1,17 +1,8 @@
 {% extends "base.html.twig" %}
 
-{% block title %}Add program{% endblock %}
-
 {% block body %}
-    <h1>You can add a program here: </h1>
-    {{form_start(form) }}
+    {{ form_start(form) }}
     {{ form_widget(form) }}
-    <input type="submit" value="Add">
-
+        <input type='submit' value='Create a program'>
     {{ form_end(form) }}
-
-    <a href=" {{ path('program_index') }}">
-        Retour à l'accueil
-    </a>
-
 {% endblock %}
