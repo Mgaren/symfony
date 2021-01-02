@@ -1,5 +1,7 @@
 <?php
 
+// src/Entity/Season.php
+
 namespace App\Entity;
 
 use App\Repository\SeasonRepository;
@@ -20,6 +22,12 @@ class Season
     private $id;
 
     /**
+     * @ORM\ManyToOne(targetEntity=Program::class, inversedBy="seasons")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $program;
+
+    /**
      * @ORM\Column(type="integer")
      */
     private $number;
@@ -35,11 +43,6 @@ class Season
     private $description;
 
     /**
-     * @ORM\ManyToOne(targetEntity=Program::class, inversedBy="seasons")
-     */
-    private $program;
-
-    /**
      * @ORM\OneToMany(targetEntity=Episode::class, mappedBy="season")
      */
     private $episodes;
@@ -52,6 +55,18 @@ class Season
     public function getId(): ?int
     {
         return $this->id;
+    }
+
+    public function getProgram(): ?Program
+    {
+        return $this->program;
+    }
+
+    public function setProgram(?Program $program): self
+    {
+        $this->program = $program;
+
+        return $this;
     }
 
     public function getNumber(): ?int
@@ -86,18 +101,6 @@ class Season
     public function setDescription(string $description): self
     {
         $this->description = $description;
-
-        return $this;
-    }
-
-    public function getProgram(): ?int
-    {
-        return $this->program;
-    }
-
-    public function setProgram(int $program): self
-    {
-        $this->program = $program;
 
         return $this;
     }

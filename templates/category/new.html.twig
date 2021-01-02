@@ -1,10 +1,8 @@
-{# templates/category/new.html.twig #}
-{% extends "base.html.twig" %}
+{% extends 'base.html.twig' %}
 
 {% block body %}
     {{ form_start(form) }}
     {{ form_widget(form) }}
-    <input type='submit' value='Add category'>
+        <input type="submit" value="Add category">
     {{ form_end(form) }}
-    <a href=" {{ path('category_index') }}">Retour</a>
 {% endblock %}
